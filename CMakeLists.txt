@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.11)
+project(sqlite-cpp)
+# find_package(SQLITE3 REQUIRED)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} sqlite3)
